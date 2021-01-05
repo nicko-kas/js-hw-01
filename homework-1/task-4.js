@@ -22,20 +22,25 @@ while (true) {
     if (orderInput===null){
         message='Отменено пользователем!';
         alert(message);
+        console.log (message);
         break;
     } else if (orderInput.length && orderInput.replace(new RegExp("[0-9]", "g"), '').length) {
         message='Поддерживаются только целые числа (без пробелов)';
         alert(message);
+        console.log (message);
     } else if (!orderInput.length) {
         message='Введите значение заказа';
         alert(message);
+        console.log (message);
     } else if (orderInput.length && orderInput*pricePerDroid<=credits) {
         message=`Вы купили ${orderInput} дроидов, на счету осталось ${credits-orderInput*pricePerDroid} кредитов.`;
         alert(message);
+        console.log (message);
         break;
     } else if (orderInput.length && orderInput*pricePerDroid>credits) {
         message='Недостаточно средств на счету!';
         alert(message);
+        console.log (message);
         break;}
 }
 
