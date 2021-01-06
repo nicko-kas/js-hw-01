@@ -12,6 +12,24 @@
 
 let credits=35500;
 let pricePerDroid=3000;
+let orderInput=prompt('Количество дройдов в заказе');
+
+if (!orderInput){
+    console.log ('Отменено пользователем!');
+}else if(orderInput.length && orderInput*pricePerDroid>credits){
+    console.log('Недостаточно средств на счету!');
+}else if (orderInput.length && orderInput*pricePerDroid<=credits){
+    console.log(`Вы купили ${orderInput} дроидов, на счету осталось ${credits-orderInput*pricePerDroid} кредитов.`);
+}else {
+    console.log('Поддерживаются только целые числа (без пробелов)');
+};
+
+
+
+
+/*
+let credits=35500;
+let pricePerDroid=3000;
 let message;
 let orderInput;
 
@@ -43,7 +61,7 @@ while (true) {
         console.log (message);
         break;}
 }
-
+*/
 
 
 

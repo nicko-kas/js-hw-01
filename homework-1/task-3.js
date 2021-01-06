@@ -12,7 +12,7 @@ let message;
 const ADMIN_PASSWORD='adminpass';
 let userInput=prompt('Введите пароль');
 
-if (userInput===null) {
+if (!userInput) {
     message='Отменено пользователем!';
 } else if (userInput===ADMIN_PASSWORD) {
     message='Добро пожаловать!';
