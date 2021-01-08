@@ -10,15 +10,14 @@ bell Делать проверку того, что  пользователь в
  */
 
 let total = 0;
-for (;;){
-  let input = prompt('Введите произвольное число');
-     if (!input) {
-        alert(`Общая сумма чисел равна ${total}`);
-        break;
-    } else if (Number(input.replace(',','.'))+total){
-        total=total+Number(input.replace(',','.'))
-    } else {
-        alert('Было введено не число, попробуйте еще раз');
-    };  
-    
-};
+for (;;) {
+  let input = prompt("Введите произвольное число");
+  if (!input) {
+    alert(`Общая сумма чисел равна ${total}`);
+    break;
+  } else if (Number(input.replace(",", ".")) + total) {
+    total = total + Number(input.replace(",", "."));
+  } else {
+    alert("Было введено не число, попробуйте еще раз");
+  }
+}

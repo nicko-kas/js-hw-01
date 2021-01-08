@@ -9,20 +9,16 @@ const ADMIN_PASSWORD = 'adminpas s';
 let message;*/
 
 let message;
-const ADMIN_PASSWORD='adminpass';
-let userInput=prompt('Введите пароль');
+const ADMIN_PASSWORD = "adminpass";
+let userInput = prompt("Введите пароль");
 
 if (!userInput) {
-    message='Отменено пользователем!';
-} else if (userInput===ADMIN_PASSWORD) {
-    message='Добро пожаловать!';
+  message = "Отменено пользователем!";
+} else if (userInput === ADMIN_PASSWORD) {
+  message = "Добро пожаловать!";
 } else {
-    message='Доступ запрещен, неверный пароль!';
-};
+  message = "Доступ запрещен, неверный пароль!";
+}
 
 alert(message);
 console.log(message);
-
-
-
-
