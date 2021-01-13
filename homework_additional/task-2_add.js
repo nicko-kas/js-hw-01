@@ -4,8 +4,10 @@
               форматі "Вітаю ви вгадали число (тут варіант компютера)" або "Ви
               програли, компютер загадав (тут варіант компютера)" */
 
-let ranValue = Math.ceil(Math.random()*10);
+let ranValue = Math.ceil(Math.random() * 10);
 
-let userGuess = prompt('Угадайте число от 1 до 10');
+let userGuess = prompt("Угадайте число от 1 до 10");
 
-(userGuess===ranValue) ? alert(`Вітаю ви вгадали число ${ranValue}`): alert(`Ви програли, компютер загадав ${ranValue}`);
+userGuess === ranValue
+  ? alert(`Вітаю ви вгадали число ${ranValue}`)
+  : alert(`Ви програли, компютер загадав ${ranValue}`);
